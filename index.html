@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -34,15 +34,15 @@
         </div>
         <hr>
     </div>
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: brown">
-        <a class="navbar-brand" style="margin: auto; margin-left: 60px;" href="#"><i class="fas fa-bars"></i></a>
-        <a class="navbar-brand" style="margin: auto;margin-left: 75px;" href="#"><img width="70px" height="40px" src="./img/open-book-education-icon-logo-vector-20092739.jpg" class="rounded-circle" alt="Cinque Terre"></a>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:white">
+        <a class="navbar-brand" style="margin: auto; margin-left: 60px; color: black;" href="#"><i class="fas fa-bars"></i></a>
+        <a class="navbar-brand" style="margin: auto;margin-left: 75px; " href="#"><img width="70px" height="40px" src="./img/open-book-education-icon-logo-vector-20092739.jpg" class="rounded-circle" alt="Cinque Terre"></a>
 
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse nav-content" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" href="#">Action 1</a>
                         <a class="dropdown-item" href="#">Action 2</a>
@@ -50,10 +50,10 @@
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Categories <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" style="color: black;" href="#">Categories <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" href="#">Action 1</a>
                         <a class="dropdown-item" href="#">Action 2</a>
@@ -61,14 +61,14 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" href="#">Action 1</a>
                         <a class="dropdown-item" href="#">Action 2</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="Blog">Shop</a>
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="Blog">Shop</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" href="#">Action 1</a>
                         <a class="dropdown-item" href="#">Action 2</a>
@@ -76,7 +76,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other</a>
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" href="#">Action 1</a>
                         <a class="dropdown-item" href="#">Action 2</a>
@@ -99,12 +99,171 @@
         </div>
     </nav>
 
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div style="background-image: url(./img/vibrant-pink-watercolor-painting-background_53876-58931\ \(1\).jpg);background-attachment: fixed;background-repeat: no-repeat;background-size: cover; height: 500px;" class="view">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="/img/img1.png" alt="" style="margin-top: 60px; width: 700px; height: 390px; float: right; margin-right:45px ;">
+                            <p class="hero__pretitle text-uppercase font-weight-bold text-gray-400 mb-2 animated fadeInUp nav-p" data-scs-animation-in="fadeInUp" data-scs-animation-delay="200" style="animation-delay: 200ms; opacity: 5;">The Bookworm Editors'</p>
+                            <h2 class="hero__title font-size-14 mb-4 animated fadeInUp nav-b" data-scs-animation-in="fadeInUp" data-scs-animation-delay="300" style="animation-delay: 300ms; opacity: 1;">
+                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;">Featured Books of the</span>
+                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 200%; font-family: unset;">February</span>
+                                <button type="button" class="btn btn-dark btn-danger" style="background-color: black; width: 200px; height: 60px; margin-top: 1%;">See More</button>
+                            </h2>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div style="background-image:url(//cdn.shopify.com/s/files/1/0359/5979/9852/files/slider_2000x.jpg?v=1585450258); height: 500px;" class="view">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="hero__title font-size-14 mb-4 animated fadeInUp nav-c " data-scs-animation-in="fadeInUp" data-scs-animation-delay="300" style="animation-delay: 300ms; opacity: 1;">
+                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;">Books are intellectuals</span>
+                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 100%; font-family: unset;">Meeting a good book should buy it right away <br> whether you can read it or not <br> because sooner or later you need it.</span>
+                            </h2>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+        </div>
+        <div class="container-fluid">
+            <div class="row " style="padding-top: 100px;">
+                <div class="col-md-4 ">
+                    <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Featured Categories</h3>
+                </div>
+                <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
+                    <a href="">
+                        <p style="color: black;">All Categories <i class="fas fa-chevron-right"></i> </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </div>
+    <div class="active-a1">
+        <ul class="list-unstyled my-0 row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-wd-5">
+            <li class="nav-li col mb-5" style="background-color:rgb(249, 240, 255)">
+                <div class="container-ah1 bg-indigo-light px-6 py-4" style="margin-top: 20px;margin-left: 20px;">
+                    <div class="container-ah2 font-size-12" style="font-size: 20px; color:blueviolet;">
+                        <i class="fas fa-photo-video" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="product-category__body" style="">
+                        <h3 class="ab1" style="font-size:20px; margin-top: 15px;">
+                            <a href="" class="text-dark">Arts &amp; Photography</a>
+                        </h3>
+                        <a href="" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                    </div>
+                </div>
+
+            </li>
+            <li class="nav-li1 col mb-5" style="background-color:rgb(255, 249, 240)">
+                <div class="container-ah2 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
+                    <div class="product-category__icon font-size-12" style="font-size: 20px;">
+                        <i class="fas fa-utensils" style="font-size: 40px; color:chocolate"></i>
+                    </div>
+                    <div class="product-category__body">
+                        <h3 class="ab2" style="font-size:20px; margin-top: 15px;">
+                            <a href="" class="bwgb-products-category__category-title stretched-link text-dark">Food &amp; Drink</a>
+                        </h3>
+                        <a href="" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-li2 col mb-5" style="background-color:rgb(255, 240, 244)">
+                <div class="container-ah3 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
+                    <div class="product-category__icon font-size-12  text-tangerine">
+                        <i class="far fa-heart" style="font-size: 40px;color: fuchsia"></i>
+                    </div>
+                    <div class=" product-category__body ">
+                        <h3 class="ab3" style="font-size:20px; margin-top: 15px;">
+                            <a href=" " class="bwgb-products-category__category-title stretched-link text-dark ">Romance</a>
+                        </h3>
+                        <a href=" " class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-li3 col mb-5 " style="background-color:rgb(240, 244, 255) ">
+                <div class="container-ah4 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
+                    <div class="product-category__icon font-size-12 text-tangerine ">
+                        <i class="fas fa-stethoscope" style="font-size: 40px;color: rgb(0, 162, 255);"></i>
+                    </div>
+                    <div class=" product-category__body ">
+                        <h3 class="ab4 " style="font-size:20px; margin-top: 15px; ">
+                            <a href=" " class="bwgb-products-category__category-title stretched-link text-dark ">Health</a>
+                        </h3>
+                        <a href=" " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-li4 col mb-5 " style="background-color:rgb(255, 240, 244) ; ">
+                <div class="container-ah5 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
+                    <div class="product-category__icon font-size-12 text-tangerine ">
+                        <i class="far fa-edit" style="font-size: 40px;color: crimson"></i>
+                    </div>
+                    <div class="product-category__body ">
+                        <h3 class="ab5" style="font-size:20px; margin-top: 15px; ">
+                            <a href=" " class="bwgb-products-category__category-title stretched-link text-dark ">Biography</a>
+                        </h3>
+                        <a href=" " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="row " style="padding-top: 50px;">
+            <div class="col-md-4 ">
+                <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Bestselling Books</h3>
+            </div>
+            <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
+                <a href="">
+                    <p style="color: black;">View All <i class="fas fa-chevron-right"></i> </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+
+    <!--/.Carousel Wrapper-->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 </body>
 
 </html>

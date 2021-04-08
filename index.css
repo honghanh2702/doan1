@@ -49,6 +49,7 @@ container-a1 {
     font-family: initial;
     line-height: 30px;
     font-size: 20px;
+    color: #000;
 }
 
 .nav-dark {
@@ -58,4 +59,134 @@ container-a1 {
 
 .nav-a1 {
     font-family: initial;
+}
+
+.img-area img {
+    width: 200px;
+}
+
+.container-carousel {
+    margin-top: 5%;
+    background: linear-gradient(-100deg, rgb(0, 81, 255) 50%, deeppink 50%);
+    height: 500px;
+}
+
+.img-text {
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding-top: 30%;
+    background: #262622;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.img-text h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img-text p {
+    font-size: 14px;
+}
+
+.single-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.img-area {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid blueviolet;
+    overflow: hidden;
+    top: 15px;
+    left: center;
+    right: 0;
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -70px;
+}
+
+.carousel-indicators li {
+    background: #000;
+    border-radius: 100px;
+    width: 20px;
+    height: 25px;
+}
+
+.carousel-indicators .active {
+    background: #fff;
+}
+
+.nav-p {
+    display: block;
+    margin-block-start: 10em;
+    margin-block-end: 1em;
+    margin-inline-start: 85px;
+    margin-inline-end: 0px;
+    font-family: initial;
+    color: darkgray;
+}
+
+.nav-b {
+    margin-top: 1px;
+    margin-left: 5%;
+}
+
+.nav-c {
+    margin-top: 150px;
+    margin-left: 5%;
+}
+
+.nav-h2 {
+    padding-top: 100px;
+    margin-left: 90px;
+}
+
+.nav-mode {
+    padding-top: 100px;
+    margin-left: 60px;
+}
+
+#nav-2 {
+    padding-top: 100px;
+}
+
+.container-abd {
+    padding-top: 110px;
+    margin-left: 300px;
+}
+
+.active-a1 {
+    padding: 20px;
+    margin-left: -30px;
+}
+
+.nav-li {
+    margin-left: 90px;
+    margin-right: 20px;
+}
+
+.nav-li1 {
+    margin-right: 20px;
+}
+
+.nav-li2 {
+    margin-right: 20px;
+}
+
+.nav-li3 {
+    margin-right: 20px;
+}
+
+.nav-li4 {
+    margin-right: 20px;
 }
