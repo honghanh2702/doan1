@@ -8,9 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
 </head>
+
 
 <body>
     <div style="margin-bottom: -10px;padding: 0;" class="container-fluid">
@@ -113,9 +127,9 @@
                             <img src="/img/img1.png" alt="" style="margin-top: 60px; width: 700px; height: 390px; float: right; margin-right:45px ;">
                             <p class="hero__pretitle text-uppercase font-weight-bold text-gray-400 mb-2 animated fadeInUp nav-p" data-scs-animation-in="fadeInUp" data-scs-animation-delay="200" style="animation-delay: 200ms; opacity: 5;">The Bookworm Editors'</p>
                             <h2 class="hero__title font-size-14 mb-4 animated fadeInUp nav-b" data-scs-animation-in="fadeInUp" data-scs-animation-delay="300" style="animation-delay: 300ms; opacity: 1;">
-                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;">Featured Books of the</span>
-                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 200%; font-family: unset;">February</span>
-                                <button type="button" class="btn btn-dark btn-danger" style="background-color: black; width: 200px; height: 60px; margin-top: 1%;">See More</button>
+                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;float: left;margin-top: -32px;">Featured Books of the</span>
+                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 200%; font-family: unset;float: left;">February</span>
+                                <button type="button" class="btn btn-dark btn-danger" style="background-color: black; width: 200px; height: 60px; margin-top: 11%;margin-left: -79%;">See More</button>
                             </h2>
                         </div>
                     </div>
@@ -130,8 +144,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h2 class="hero__title font-size-14 mb-4 animated fadeInUp nav-c " data-scs-animation-in="fadeInUp" data-scs-animation-delay="300" style="animation-delay: 300ms; opacity: 1;">
-                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;">Books are intellectuals</span>
-                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 100%; font-family: unset;">Meeting a good book should buy it right away <br> whether you can read it or not <br> because sooner or later you need it.</span>
+                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;float: left;">Books are intellectuals</span>
+                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 100%; font-family: unset;float: left;margin-top: 6%;margin-left: -47%;">Meeting a good book should buy it right away <br> whether you can read it or not <br> because sooner or later you need it.</span>
                             </h2>
                         </div>
 
@@ -248,23 +262,1567 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="slider-body">
+        <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 75%; margin: auto;">
+            <div class="card" style="margin-right: -10px;z-index: 1;">
+                <div class="img"><img src="/img/22-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                <div class="content" style="text-align: left; margin-top: -10%;">
+                    <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDEL</p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Angry God (All Saints High Book 3) </b></p>
+                    <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">L.J.Shen</p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.30</b></p>
+                    <div id="addcart" class="addcart" style="">
+                        <a href="">
+                            <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-right: -10px;">
+                <div class="img"><img src="/img/18-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                <div class="content" style="text-align: left;margin-top: -17%;">
+                    <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Dark in Death: An Eve Dallas Novel (In Death ,Book 46) </b></p>
+                    <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">J.D.Robb</p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$14.20</b></p>
+                    <div id="addcart" class="addcart" style="">
+                        <a href="">
+                            <h6 style="color: black;">ADD TO CART</h6>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card" style="margin-right: -10px;">
+                <div class="img"><img src="/img/46-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                <div class="content" style="text-align: left;margin-top: -10%;">
+                    <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">HARDCOVER, KINDEL , PAPERBACK </p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> The Last Sister (Columbia River Book 1) </b></p>
+                    <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Conn Iggulden</p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$29.59-$59.95</b></p>
+                    <div id="addcart" class="addcart" style="">
+                        <a href="">
+                            <h6 style="color: black;">ADD TO CART</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-right: -10px;">
+                <div class="img"><img src="/img/30-300x449-1-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                <div class="content" style="text-align: left;margin-top: -18%;">
+                    <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">HARDCOVER</p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>The Last Sister (Columbia River Book 1)</b></p>
+                    <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Jessica Simpson,Max Lucado</p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$15.59</b></p>
+                    <div id="addcart" class="addcart" style="">
+                        <a href="">
+                            <h6 style="color: black;">ADD TO CART</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-right: -10px;">
+                <div class="img"><img src="/img/3-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                <div class="content" style="text-align: left;margin-top: -10%;">
+                    <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDLE</p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Think Like a Monk : Train Your Mind  for Peace and...</b></p>
+                    <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Luanne Rice</p>
+                    <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.75</b></p>
+                    <div id="addcart" class="addcart" style="">
+                        <a href="">
+                            <h6 style="color: black;">ADD TO CART</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row " style="padding-top: 100px;">
+                <div class="col-md-12 ">
+                    <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Featured Categories</h3>
+                </div>
+            </div>
+            <ul class="nav justify-content-center" style="margin-left: 47px;">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Fretured</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1">On Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu2">Most Viewer</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                    <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 99%; margin: auto;">
+                        <div class="card" style="margin-right: -10px;z-index: 1;">
+                            <div class="img"><img src="/img/22-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left; margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDEL</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Angry God (All Saints High Book 3) </b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">L.J.Shen</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.30</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/18-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -17%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Dark in Death: An Eve Dallas Novel (In Death ,Book 46) </b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">J.D.Robb</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$14.20</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/32-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">PAPERBACK </p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Ask Again , Yes : A Novel </b></p> <br>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Mary Beth Keane</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$11.51</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/23-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -18%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">PAPERBACK</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Broken Faith: Inside the Word of Faith…</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Edward Lee</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$10.29</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/14-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">PAPERBACK</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Eternity Springs: The McBrides of Texas Ev...</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Emily March</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$6.99</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 99%; margin: auto;">
+                        <div class="card" style="margin-right: -10px;z-index: 1;">
+                            <div class="img"><img src="/img/12-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left; margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">HARDCOVER</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Jesus: The God Who Knows Your Name </b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Max Lucado</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$16.59</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/37-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -17%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">KINDLE</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b>Next Level Basic: The Definitive Basic Bitch...</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Stassi Schroeder</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$4.72</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/28-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">HARDCOVER </p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> The Rural Diaries: Love, Livestock, and Big Lif... </b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Hilarie Burton</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$14.82</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/30-300x449-1-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -18%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">HARDCOVER, KINDEL , PAPERBACK </p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>The Stellenbosch Mafia: Inside the...</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Pieter du Toit</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$29.95-$59.95</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/9-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">Hardcover</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Until the End of Time: Mind, Matter, and Our...</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Brian Greene</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$12.99</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                    <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 99%; margin: auto;">
+                        <div class="card" style="margin-right: -10px;z-index: 1;">
+                            <div class="img"><img src="/img/33-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left; margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDEL</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Fever: A Novel </b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Mary Beth Keane</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$5.30</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/39-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -17%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b>The Hide</b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">J.D.Robb</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$40.00</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/24-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">KINDEL</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Red Mountain: A Novel (Red Mountain... </b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Boo Walker</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$4.99</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/31-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -18%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">HARDCOVER, KINDEL , PAPERBACK</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>The Lost Colony (The Long Winter Tril...</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">A G Riddle</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$29.95-$59.95</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/31-120x183 (1).jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">PAPERBACK</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Nightingal</b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Ashlee Vance</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$41.99</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 99%; margin: auto;">
+                        <div class="card" style="margin-right: -10px;z-index: 1;">
+                            <div class="img"><img src="/img/10-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left; margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDEL</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Blindside (Michael Bennett Book 12) </b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">James Patterson</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$15.99</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/3-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -17%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">KINDEL</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Last Day </b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Luanne Rice</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.75</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/img6-3-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">Kindle Edition </p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Under a Firefly Moon (Firefly Lake Book 1)</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Nora Roberts</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$99.00</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/50-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -18%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">PAPERBACK</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Buttermilk Graffiti: A Chef’s Journey to...</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Edward Lee</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$10.29</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/46-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDLE</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Where the Crawdads Sing</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Kelly Harms</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$37.00</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu2" class="container tab-pane fade"><br>
+                    <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 99%; margin: auto;">
+                        <div class="card" style="margin-right: -10px;z-index: 1;">
+                            <div class="img"><img src="/img/image_120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left; margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">Jordan Belford</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Sói Già Phố Wall - Phần 1 </b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Jordan Belford</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.30</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/20-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -17%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">PAPERBACK</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 89%;"><b> Man’s Search for Meaning </b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Viktor E. Frankl</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$9.99</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/11-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">HARDCOVER </p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Camino Winds </b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">John Grisham</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$12.99</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/13-120x183 .jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -18%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">KINDLE</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Blindside (Michael Bennett Book 12)</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Jessica Simpson,Max Lucado</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$15.59</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/45-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDLE</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Dead End Girl: A Gripping Serial Killer...</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">L T Vargus</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$4.04</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 99%; margin: auto;">
+                        <div class="card" style="margin-right: -10px;z-index: 1;">
+                            <div class="img"><img src="/img/warren-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left; margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDEL</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> 22 Thương Vụ Đầu Tiên và Những Bài Học Sai Lầm </b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Warren Buffett</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$13.30</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/dac_120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -17%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Đắc Nhân Tâm </b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Dale Carnegie</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$5.30</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/7-120x183.jpg" alt="" style="width: 70%;padding-top: 13px;height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;"> PAPERBACK </p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Nhà Giả Kim </b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Paulo Coelho</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$6.7</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/19-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                            <div class="content" style="text-align: left;margin-top: -18%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">HARDCOVER</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Đánh Thức Con Người Phi Thường Trong Bạn</b></p>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Anthony Robbins</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$15.59</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-right: -10px;">
+                            <div class="img"><img src="/img/photo-120x183.jpg" alt="" style="width: 60%; padding-top: 13px; height: 76%;"></div>
+                            <div class="content" style="text-align: left;margin-top: -10%;">
+                                <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDLE</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Nghĩ giàu, làm giàu</b></p><br>
+                                <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;"> Napolean Hill</p>
+                                <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.75</b></p>
+                                <div id="addcart" class="addcart" style="">
+                                    <a href="">
+                                        <h6 id="adtc" style="color: black;">ADD TO CART</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container-fluid" style="padding-top: 59px;">
+            <div class="row " style="padding-top: 50px; background-color: rgb(255, 192, 239);">
+                <div class="col-md-4 ">
+                    <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Deals of Week</h3>
+                </div>
+                <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
+                    <a href="">
+                        <p style="color: black;">View All <i class="fas fa-chevron-right"></i> </p>
+                    </a>
+                </div>
+                <div class="container mt-3">
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li class="item1 active"></li>
+                            <li class="item2"></li>
+                            <li class="item3"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/img1-14 (1).jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: 33%; ">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -17px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 40%;margin-top: -5px;">Already Sold: 11</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100" style="width:70%;background-color: orangered;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/img2-6.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: -6%; ">Under a Firefly Moon (Firefly Lake Book 1)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -5px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 40%;margin-top: -5px;">Already Sold: 11</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:70%;background-color: orangered;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/img2-6.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: 33%; ">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -17px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 40%;margin-top: -5px;">Already Sold: 11</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100" style="width:70%;background-color: orangered;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/img3-1.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: -6%; ">Under a Firefly Moon (Firefly Lake Book 1)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -5px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 40%;margin-top: -5px;">Already Sold: 11</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:70%;background-color: orangered;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/img4-4.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: 33%; ">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -17px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 40%;margin-top: -5px;">Already Sold: 11</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100" style="width:70%;background-color: orangered;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/img5-4.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: -6%; ">Under a Firefly Moon (Firefly Lake Book 1)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -5px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 40%;margin-top: -5px;">Already Sold: 11</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:70%;background-color: orangered;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev " href="#myCarousel ">
+                            <span class="carousel-control-prev-icon "></span>
+                        </a>
+                        <a class="carousel-control-next " href="#myCarousel ">
+                            <span class="carousel-control-next-icon "></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="padding-top: 59px;">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">New Releases</h3>
+                </div>
+                <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
+                    <ul class="nav justify-content-center" style="margin-left: 56%;font-size: initial;">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: black;" data-toggle="tab" href="#history">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black;" data-toggle="tab" href="#math">Science & Math</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black;" data-toggle="tab" href="#romance">Romance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black;" data-toggle="tab" href="#travel">Travel</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="history" class="container tab-pane active"><br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-xs-1-12">
+                                    <div class="card" style="margin-left: -75px;">
+                                        <div class="card-body" style="background-color: rgb(239, 250, 215);height: 635px;">
+                                            <img src="./img/img1-13.png" alt="">
+                                            <h3 class="banner_text m-0"><span class="bwgb-products-banner__title d-block mb-1 font-size-10 font-weight-regular" style="font-size: 165%;color: chocolate;">Get Extra</span>
+                                                <span class="bwgb-products-banner__discount d-block mb-3 font-size-12 text-primary font-weight-medium" style="font-size: 260%;">Sale -25%</span>
+                                                <span class="bwgb-products-banner__subText d-block mb-5 text-uppercase font-size-7 font-weight-regular text-gray-400">ON ORDER OVER $100</span>
+                                            </h3>
+                                            <input name="" id="" class="btn btn-primary" type="button" value="View More" style="margin-top: -10%;background-color: orangered;width: 60%;height: 54px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8" style="margin-left: -82px;">
+                            <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 128%; margin: auto;height: 330px;">
+                                <div class="card" style="margin-right: -10px;z-index: 1;">
+                                    <div class="img"><img src="/img/22-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left; margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: -15%;font-size: 60%;">KINDEL</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Angry God (All Saints High Book 3) </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">L.J.Shen</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.30</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/18-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -17%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Dark in Death: An Eve Dallas Novel (In Death ,Book 46) </b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">J.D.Robb</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$14.20</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/32-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">PAPERBACK </p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Ask Again , Yes : A Novel </b></p> <br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Mary Beth Keane</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$11.51</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/23-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -18%;">
+                                        <p class="card-title" style="color:red;margin-top: -28%;font-size: 60%;padding-top: 23px;">PAPERBACK</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Broken Faith: Inside the Word of Faith…</b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Edward Lee</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$10.29</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/14-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: -0%;font-size: 60%;">PAPERBACK</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Eternity Springs: The McBrides of Texas Ev...</b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Emily March</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$6.99</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 128%; margin: auto; height: 308px;">
+                                <div class="card" style="margin-right: -10px;z-index: 1;">
+                                    <div class="img"><img src="/img/12-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left; margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: -15%;font-size: 60%;">HARDCOVER</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Jesus: The God Who Knows Your Name </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Max Lucado</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$16.59</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/37-120x183.jpg" alt="" style="width: 41%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -17%;">
+                                        <p class="card-title" style="color:red;margin-top: -43%;font-size: 60%; padding-top: 23px;">KINDLE</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b>Next Level Basic: The Definitive Basic Bitch...</b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Stassi Schroeder</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$4.72</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/28-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 87%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">HARDCOVER </p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> The Rural Diaries: Love, Livestock, and Big Lif... </b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Hilarie Burton</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$14.82</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/30-300x449-1-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -18%;">
+                                        <p class="card-title" style="color:red;margin-top: -13%;font-size: 60%;padding-top: 23px;">HARDCOVER, KINDEL , PAPERBACK </p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>The Stellenbosch Mafia: Inside the...</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Pieter du Toit</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$29.95-$59.95</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/9-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">Hardcover</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Until the End of Time: Mind, Matter, and Our...</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Brian Greene</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$12.99</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="math" class="container tab-pane fade"><br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-xs-1-12">
+                                    <div class="card" style="margin-left: -75px;">
+                                        <div class="card-body" style="background-color: rgb(239, 250, 215);height: 618px;">
+                                            <img src="./img/img1-13.png" alt="">
+                                            <h3 class="banner_text m-0"><span class="bwgb-products-banner__title d-block mb-1 font-size-10 font-weight-regular" style="font-size: 165%;color: chocolate;">Get Extra</span>
+                                                <span class="bwgb-products-banner__discount d-block mb-3 font-size-12 text-primary font-weight-medium" style="font-size: 260%;">Sale -25%</span>
+                                                <span class="bwgb-products-banner__subText d-block mb-5 text-uppercase font-size-7 font-weight-regular text-gray-400">ON ORDER OVER $100</span>
+                                            </h3>
+                                            <input name="" id="" class="btn btn-primary" type="button" value="View More" style="margin-top: -10%;background-color: orangered;width: 60%;height: 54px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8" style="margin-left: -82px;">
+                            <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 128%; margin: auto;">
+                                <div class="card" style="margin-right: -10px;z-index: 1;">
+                                    <div class="img"><img src="/img/33-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left; margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDEL</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Fever: A Novel </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Mary Beth Keane</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$5.30</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/39-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -17%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b>The Hide</b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">J.D.Robb</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$40.00</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/24-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">KINDEL</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Red Mountain: A Novel (Red Mountain... </b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Boo Walker</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$4.99</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/31-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -18%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">HARDCOVER, KINDEL , PAPERBACK</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>The Lost Colony (The Long Winter Tril...</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">A G Riddle</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$29.95-$59.95</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/31-120x183 (1).jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">PAPERBACK</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Nightingal</b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Ashlee Vance</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$41.99</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 128%; margin: auto;">
+                                <div class="card" style="margin-right: -10px;z-index: 1;">
+                                    <div class="img"><img src="/img/10-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left; margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDEL</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Blindside (Michael Bennett Book 12) </b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">James Patterson</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$15.99</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/3-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -17%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">KINDEL</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Last Day </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Luanne Rice</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.75</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/img6-3-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">Kindle Edition </p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Under a Firefly Moon (Firefly Lake Book 1)</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Nora Roberts</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$99.00</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/50-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -18%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">PAPERBACK</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Buttermilk Graffiti: A Chef’s Journey to...</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Edward Lee</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$10.29</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/46-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDLE</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Where the Crawdads Sing</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Kelly Harms</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$37.00</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="romance" class="container tab-pane fade"><br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-xs-1-12">
+                                    <div class="card" style="margin-left: -75px;">
+                                        <div class="card-body" style="background-color: rgb(239, 250, 215);height: 618px;">
+                                            <img src="./img/img1-13.png" alt="">
+                                            <h3 class="banner_text m-0"><span class="bwgb-products-banner__title d-block mb-1 font-size-10 font-weight-regular" style="font-size: 165%;color: chocolate;">Get Extra</span>
+                                                <span class="bwgb-products-banner__discount d-block mb-3 font-size-12 text-primary font-weight-medium" style="font-size: 260%;">Sale -25%</span>
+                                                <span class="bwgb-products-banner__subText d-block mb-5 text-uppercase font-size-7 font-weight-regular text-gray-400">ON ORDER OVER $100</span>
+                                            </h3>
+                                            <input name="" id="" class="btn btn-primary" type="button" value="View More" style="margin-top: -10%;background-color: orangered;width: 60%;height: 54px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8" style="margin-left: -82px;">
+                            <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 128%; margin: auto;">
+                                <div class="card" style="margin-right: -10px;z-index: 1;">
+                                    <div class="img"><img src="/img/image_120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left; margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">Jordan Belford</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Sói Già Phố Wall - Phần 1 </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Jordan Belford</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.30</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/20-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -17%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">PAPERBACK</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 89%;"><b> Man’s Search for Meaning </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Viktor E. Frankl</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$9.99</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/11-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">HARDCOVER </p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Camino Winds </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">John Grisham</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$12.99</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/13-120x183 .jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -18%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">KINDLE</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Blindside (Michael Bennett Book 12)</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Jessica Simpson,Max Lucado</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$15.59</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/45-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDLE</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Dead End Girl: A Gripping Serial Killer...</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">L T Vargus</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$4.04</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 128%; margin: auto;">
+                                <div class="card" style="margin-right: -10px;z-index: 1;">
+                                    <div class="img"><img src="/img/warren-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left; margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDEL</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> 22 Thương Vụ Đầu Tiên và Những Bài Học Sai Lầm </b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Warren Buffett</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$13.30</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/dac_120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -17%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Đắc Nhân Tâm </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Dale Carnegie</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$5.30</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/7-120x183.jpg" alt="" style="width: 70%;padding-top: 13px;height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;"> PAPERBACK </p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Nhà Giả Kim </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Paulo Coelho</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$6.7</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/19-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -18%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">HARDCOVER</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Đánh Thức Con Người Phi Thường Trong Bạn</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Anthony Robbins</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$15.59</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/photo-120x183.jpg" alt="" style="width: 60%; padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDLE</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Nghĩ giàu, làm giàu</b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;"> Napolean Hill</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.75</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 id="adtc" style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="travel" class="container tab-pane fade"><br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-xs-1-12">
+                                    <div class="card" style="margin-left: -75px;">
+                                        <div class="card-body" style="background-color: rgb(239, 250, 215);height: 618px;">
+                                            <img src="./img/img1-13.png" alt="">
+                                            <h3 class="banner_text m-0"><span class="bwgb-products-banner__title d-block mb-1 font-size-10 font-weight-regular" style="font-size: 165%;color: chocolate;">Get Extra</span>
+                                                <span class="bwgb-products-banner__discount d-block mb-3 font-size-12 text-primary font-weight-medium" style="font-size: 260%;">Sale -25%</span>
+                                                <span class="bwgb-products-banner__subText d-block mb-5 text-uppercase font-size-7 font-weight-regular text-gray-400">ON ORDER OVER $100</span>
+                                            </h3>
+                                            <input name="" id="" class="btn btn-primary" type="button" value="View More" style="margin-top: -10%;background-color: orangered;width: 60%;height: 54px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8" style="margin-left: -82px;">
+                            <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 128%; margin: auto;">
+                                <div class="card" style="margin-right: -10px;z-index: 1;">
+                                    <div class="img"><img src="/img/38-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left; margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">PAPERBACK</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style="">Dark Matter: A Mind-Blowing Twisted Thriller </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Blake Crouch</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$13.30</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/36-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -17%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">KINDEL</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 89%;"><b> Milkman: A Novel </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Anna Burns</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$3.99</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/11-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">HARDCOVER </p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Camino Winds </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">John Grisham</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$12.99</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/43-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -18%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">HANDCOVER</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Conqueror</b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Conn Iggulden</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$25.88</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/45-120x183.jpg" alt="" style="width: 44%; padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">HANDCOVER</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Dead End Girl: A Gripping Serial Killer...</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">L T Vargus</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$4.04</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 128%; margin: auto;">
+                                <div class="card" style="margin-right: -10px;z-index: 1;">
+                                    <div class="img"><img src="/img/warren-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left; margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDEL</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> 22 Thương Vụ Đầu Tiên và Những Bài Học Sai Lầm </b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Warren Buffett</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$13.30</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/dac_120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -17%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Đắc Nhân Tâm </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Dale Carnegie</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$5.30</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/7-120x183.jpg" alt="" style="width: 70%;padding-top: 13px;height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;"> PAPERBACK </p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Nhà Giả Kim </b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Paulo Coelho</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$6.7</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/19-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -18%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">HARDCOVER</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Đánh Thức Con Người Phi Thường Trong Bạn</b></p>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Anthony Robbins</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$15.59</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="margin-right: -10px;">
+                                    <div class="img"><img src="/img/photo-120x183.jpg" alt="" style="width: 60%; padding-top: 13px; height: 76%;"></div>
+                                    <div class="content" style="text-align: left;margin-top: -10%;">
+                                        <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;">KINDLE</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Nghĩ giàu, làm giàu</b></p><br>
+                                        <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;"> Napolean Hill</p>
+                                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.75</b></p>
+                                        <div id="addcart" class="addcart" style="">
+                                            <a href="">
+                                                <h6 id="adtc" style="color: black;">ADD TO CART</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="padding-top: 59px;">
+            <div class="row " style="padding-top: 50px;">
+                <div class="col-md-4 ">
+                    <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Biographies Books
+                    </h3>
+                </div>
+                <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
+                    <a href="">
+                        <p style="color: black;">View All <i class="fas fa-chevron-right"></i> </p>
+                    </a>
+                </div>
+                <div class="container mt-3">
+                    <div id="myCarousel1" class="carousel slide">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li class="book active"></li>
+                            <li class="book1"></li>
+                            <li class="book2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/22-120x183.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: 33%; ">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -17px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/18-120x183.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: -6%; ">Under a Firefly Moon (Firefly Lake Book 1)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -5px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/28-120x183.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: 33%; ">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -17px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/img5-4.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: -6%; ">Under a Firefly Moon (Firefly Lake Book 1)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -5px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/38-120x183.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: 33%; ">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -17px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="card" style="height: 88%;">
+                                            <div class="card-body col-md-12">
+                                                <img src="/img/39-120x183.jpg" alt="" style="width: 34%;float: left;">
+                                                <div>
+                                                    <p class="card-title" style=" font-size: 12px;margin-right: 40%; color: red; ">KINDLE EDITION</p>
+                                                    <h6><b style="text-align: left;margin-right: -6%; ">Under a Firefly Moon (Firefly Lake Book 1)</b></h6><br>
+                                                    <p style="color: gray;font-size: 12px;margin-right: 43%;margin-top: -5px;">Nora Roberts</p>
+                                                    <p style="font-size: 18px;margin-right: 46%;margin-top: -19px;">$99.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev " href="#myCarousel1 ">
+                            <span class="carousel-control-prev-icon "></span>
+                        </a>
+                        <a class="carousel-control-next " href="#myCarousel1 ">
+                            <span class="carousel-control-next-icon "></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-fluid" style="padding-top: 59px;">
+                    <div class="row " style="padding-top: -10px;">
+                        <div class="col-md-4 ">
+                            <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Favorite Authors
+                            </h3>
+                        </div>
+                        <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
+                            <a href="">
+                                <p style="color: black;">View All <i class="fas fa-chevron-right"></i> </p>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6" style="display: flex;margin-left: -8%;">
+                                <img src="./img/4-1.jpg" alt="" class="img-fluid rounded-circle" style="width: 166px;height: 71%;margin-left: 59%;">
+                                <img src="./img/12.jpg" alt="" class="img-fluid rounded-circle" style="margin-left: 59px;height: 72%;width: 187px;">
+                                <img src="./img/8.jpg" alt="" class="img-fluid rounded-circle" style="margin-left: 59px;height: 72%;width: 187px;">
+                                <img src="./img/13.jpg" alt="" class="img-fluid rounded-circle" style="margin-left: 59px;height: 72%;width: 187px;">
+                                <img src="./img/1.jpg" alt="" class="img-fluid rounded-circle" style="margin-left: 59px;height: 72%;width: 187px;">
+                                <img src="./img/17.jpg" alt="" class="img-fluid rounded-circle" style="margin-left: 59px;height: 72%;width: 187px;">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
 
 
-    </div>
+                <!--/.Carousel Wrapper-->
 
-    </div>
-
-
-
-
-    <!--/.Carousel Wrapper-->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 </body>
 
 </html>
