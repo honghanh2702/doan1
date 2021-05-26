@@ -6,20 +6,109 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./js/index.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         /* Make the image fully responsive */
         
+        body {
+            background-image: url(./img/love-and-passion-background-backgrounds-love-1-5c9b994a5ecab.png);
+            background-position: fixed;
+            background-size: cover;
+            background-repeat: none;
+            background-attachment: fixed;
+        }
+        
         .carousel-inner img {
             width: 100%;
             height: 100%;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f1f1f1;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: deeppink;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: red;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        
+        .sidenav1 {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-image: url(./img/1609.jpg_wh860.jpg);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav1 a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav1 a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidenav1 .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        #main1 {
+            transition: margin-left .5s;
+            padding: 16px;
         }
     </style>
 
@@ -37,10 +126,32 @@
             </div>
             <div class="col-md-8 float-right ctn-icon">
                 <div class="container-abc">
+                    <div id="mySidenav1" class="sidenav1">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()" style="margin-top: 6%;">&times;</a>
+                        <p style="margin-left: -56%;font-size: 150%;font-family: sans-serif;margin-top:-11%;color: black"><i class="fas fa-user-alt"></i>Account</p>
+                        <hr>
+                        <h3>Sign in</h3>
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="email" style="margin-left: -54%;">Username or Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="width: 87%;margin: auto;">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd" style="margin-left: -69%;">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" style="width: 87%;margin: auto;">
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label" style="margin-left: -57%;">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="color: white;background-color: black;width: 55%;">Sign in</button>
+                        </form>
+                    </div>
                     <i class="fas fa-map-marker-alt"></i>
                     <i class="fas fa-random"></i>
                     <i class="fas fa-heart"></i>
-                    <i class="fas fa-user-alt"></i>
+                    <a class="navbar-brand" style="margin: auto; margin-left: -2px; color: black; font-size: 90%;" onclick="openNav1()" href="#"><i class="fas fa-user-alt"></i></i></a>
                     <i class="fas fa-shopping-bag"></i>
                 </div>
 
@@ -48,53 +159,61 @@
         </div>
         <hr>
     </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p style="margin-left: 12%;font-size: 109%;font-family: unset;">MENU</p>
+        <hr>
+        <a href="./index1.html" style="font-size: 80%;">Pages</a>
+        <a href="./shop.html" style="font-size: 80%;">Arts & Photography</a>
+        <a href="./shop2.html" style="font-size: 80%;">Biograhpies & Memoris</a>
+        <a href="./shop3.html" style="font-size: 80%;">Children Book</a>
+        <a href="./shop4.html" style="font-size: 80%;">Computer & Technology</a>
+        <a href="./shop5.html" style="font-size: 80%;">Cookbokks , Food & Winer</a>
+        <a href="./shop2.html" style="font-size: 80%;">Education &Teaching</a>
+        <a href="./shop3.html" style="font-size: 80%;">Health, Fitness &Dieting</a>
+        <a href="./shop4.html" style="font-size: 80%;">History</a>
+        <a href="./shop5.html" style="font-size: 80%;">Romance</a>
+        <a href="./shop.html" style="font-size: 80%;">Soprts &Outdoors</a>
+        <a href="./shop2.html" style="font-size: 80%;">Travel</a>
+        <hr>
+    </div>
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:white">
-        <a class="navbar-brand" style="margin: auto; margin-left: 60px; color: black;" href="#"><i class="fas fa-bars"></i></a>
-        <a class="navbar-brand" style="margin: auto;margin-left: 75px; " href="#"><img width="70px" height="40px" src="./img/open-book-education-icon-logo-vector-20092739.jpg" class="rounded-circle" alt="Cinque Terre"></a>
+        <a class="navbar-brand" style="margin: auto; margin-left: 28px; color: black;" onclick="openNav()" href="#"><i class="fas fa-bars"></i></a>
+        <a class="navbar-brand" style="margin: auto;margin-left: 75px; " href="#"><img width="70px" height="40px" src="./img/your-logo.png" class="" alt="" style="width: 173px;"></a>
 
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse nav-content" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-
-                    </div>
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="./index.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" style="color: black;" href="#">Categories <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" style="color: black;" href="./index1.html">Categories <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
+                        <a class="dropdown-item" href="./shop.html">Shop</a>
 
                     </div>
                 </li>
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
+                        <a class="dropdown-item" href="./Page.html">Sign in</a>
+                        <a class="dropdown-item" href="./signup.html">Sign up</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="Blog">Shop</a>
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="Blog">Blog</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-
+                        <a class="dropdown-item" href="./Blog.html">Blog</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-
+                        <a class="dropdown-item" href="./AboutUs.html">About Us</a>
                     </div>
                 </li>
 
@@ -121,15 +240,14 @@
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <div style="background-image: url(./img/vibrant-pink-watercolor-painting-background_53876-58931\ \(1\).jpg);background-attachment: fixed;background-repeat: no-repeat;background-size: cover; height: 500px;" class="view">
+                <div style="background-image: url(./img/TTT-May-2-Banner-02.png); height: 500px;" class="view">
                     <div class="row">
                         <div class="col-md-12">
-                            <img src="/img/img1.png" alt="" style="margin-top: 60px; width: 700px; height: 390px; float: right; margin-right:45px ;">
-                            <p class="hero__pretitle text-uppercase font-weight-bold text-gray-400 mb-2 animated fadeInUp nav-p" data-scs-animation-in="fadeInUp" data-scs-animation-delay="200" style="animation-delay: 200ms; opacity: 5;">The Bookworm Editors'</p>
+                            <p class="hero__pretitle text-uppercase font-weight-bold text-gray-400 mb-2 animated fadeInUp nav-p" data-scs-animation-in="fadeInUp" data-scs-animation-delay="200" style="animation-delay: 200ms; opacity: 5;"></p>
                             <h2 class="hero__title font-size-14 mb-4 animated fadeInUp nav-b" data-scs-animation-in="fadeInUp" data-scs-animation-delay="300" style="animation-delay: 300ms; opacity: 1;">
-                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;float: left;margin-top: -32px;">Featured Books of the</span>
-                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 200%; font-family: unset;float: left;">February</span>
-                                <button type="button" class="btn btn-dark btn-danger" style="background-color: black; width: 200px; height: 60px; margin-top: 11%;margin-left: -79%;">See More</button>
+                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;float: left;margin-top: -32px;"></span>
+                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 200%; font-family: unset;float: left;"></span>
+
                             </h2>
                         </div>
                     </div>
@@ -140,12 +258,12 @@
             </div>
             <div class="carousel-item">
                 <!--Mask color-->
-                <div style="background-image:url(//cdn.shopify.com/s/files/1/0359/5979/9852/files/slider_2000x.jpg?v=1585450258); height: 500px;" class="view">
+                <div style="background-image:url(./img/72c0b2_fd519ff72bf447bda2fc1cbbd30a0108_mv2.jpg); height: 500px;" class="view">
                     <div class="row">
                         <div class="col-md-12">
                             <h2 class="hero__title font-size-14 mb-4 animated fadeInUp nav-c " data-scs-animation-in="fadeInUp" data-scs-animation-delay="300" style="animation-delay: 300ms; opacity: 1;">
-                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;float: left;">Books are intellectuals</span>
-                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 100%; font-family: unset;float: left;margin-top: 6%;margin-left: -47%;">Meeting a good book should buy it right away <br> whether you can read it or not <br> because sooner or later you need it.</span>
+                                <span class="hero__title-line-1 font-weight-regular d-block" style="font-size: 200%; font-family: unset;float: left;"></span>
+                                <span class="hero__title-line-2 font-weight-bold d-block" style="font-size: 100%; font-family: unset;float: left;margin-top: 6%;margin-left: -47%;"></span>
                             </h2>
                         </div>
 
@@ -155,13 +273,13 @@
 
             <!--/.Slides-->
             <!--Controls-->
-            <a class="carousel-control-prev" href="" role="button">
-                <span class="carousel-control-prev-icon" aria-hidden=""></span>
-
+            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="" role="button">
-                <span class="carousel-control-next-icon" aria-hidden=""></span>
-
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
             <!--/.Controls-->
         </div>
@@ -171,7 +289,7 @@
                     <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Featured Categories</h3>
                 </div>
                 <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
-                    <a href="">
+                    <a href="./index1.html">
                         <p style="color: black;">All Categories <i class="fas fa-chevron-right"></i> </p>
                     </a>
                 </div>
@@ -188,9 +306,9 @@
                     </div>
                     <div class="product-category__body" style="">
                         <h3 class="ab1" style="font-size:20px; margin-top: 15px;">
-                            <a href="" class="text-dark">Arts &amp; Photography</a>
+                            <a href="./shop.html" class="text-dark">Arts &amp; Photography</a>
                         </h3>
-                        <a href="" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        <a href="./shop.html" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
                     </div>
                 </div>
 
@@ -202,9 +320,9 @@
                     </div>
                     <div class="product-category__body">
                         <h3 class="ab2" style="font-size:20px; margin-top: 15px;">
-                            <a href="" class="bwgb-products-category__category-title stretched-link text-dark">Food &amp; Drink</a>
+                            <a href="./shop.html" class="bwgb-products-category__category-title stretched-link text-dark">Food &amp; Drink</a>
                         </h3>
-                        <a href="" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        <a href="./shop.html" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
                     </div>
                 </div>
             </li>
@@ -215,9 +333,9 @@
                     </div>
                     <div class=" product-category__body ">
                         <h3 class="ab3" style="font-size:20px; margin-top: 15px;">
-                            <a href=" " class="bwgb-products-category__category-title stretched-link text-dark ">Romance</a>
+                            <a href="./shop.html " class="bwgb-products-category__category-title stretched-link text-dark ">Romance</a>
                         </h3>
-                        <a href=" " class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        <a href="./shop.html " class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
                     </div>
                 </div>
             </li>
@@ -228,9 +346,9 @@
                     </div>
                     <div class=" product-category__body ">
                         <h3 class="ab4 " style="font-size:20px; margin-top: 15px; ">
-                            <a href=" " class="bwgb-products-category__category-title stretched-link text-dark ">Health</a>
+                            <a href="./shop.html" class="bwgb-products-category__category-title stretched-link text-dark ">Health</a>
                         </h3>
-                        <a href=" " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        <a href="./shop.html " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
                     </div>
                 </div>
             </li>
@@ -241,9 +359,9 @@
                     </div>
                     <div class="product-category__body ">
                         <h3 class="ab5" style="font-size:20px; margin-top: 15px; ">
-                            <a href=" " class="bwgb-products-category__category-title stretched-link text-dark ">Biography</a>
+                            <a href="./shop.html" class="bwgb-products-category__category-title stretched-link text-dark ">Biography</a>
                         </h3>
-                        <a href=" " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        <a href="./shop.html " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
                     </div>
                 </div>
             </li>
@@ -256,7 +374,7 @@
                 <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Bestselling Books</h3>
             </div>
             <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
-                <a href="">
+                <a href="./shop.html">
                     <p style="color: black;">View All <i class="fas fa-chevron-right"></i> </p>
                 </a>
             </div>
@@ -811,7 +929,7 @@
                     <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Deals of Week</h3>
                 </div>
                 <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
-                    <a href="">
+                    <a href="./shop.html">
                         <p style="color: black;">View All <i class="fas fa-chevron-right"></i> </p>
                     </a>
                 </div>
@@ -1670,7 +1788,7 @@
                     </h3>
                 </div>
                 <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
-                    <a href="">
+                    <a href="./shop.html">
                         <p style="color: black;">View All <i class="fas fa-chevron-right"></i> </p>
                     </a>
                 </div>
@@ -1796,12 +1914,12 @@
                             </h3>
                         </div>
                         <div class="col-md-8" style="float: right;padding-right: 60px;text-align: right; font-size: 23px; padding-top: 5px;">
-                            <a href="">
+                            <a href="./AboutUs.html">
                                 <p style="color: black;">View All <i class="fas fa-chevron-right"></i> </p>
                             </a>
                         </div>
                         <div class="row">
-                            <div class="col-md-6" style="display: flex;margin-left: -8%;">
+                            <div class="col-md-6" style="display: flex;margin-left: -8%;margin-top: 2%;">
                                 <img src="./img/4-1.jpg" alt="" class="img-fluid rounded-circle" style="width: 166px;height: 71%;margin-left: 59%;">
                                 <img src="./img/12.jpg" alt="" class="img-fluid rounded-circle" style="margin-left: 59px;height: 72%;width: 187px;">
                                 <img src="./img/8.jpg" alt="" class="img-fluid rounded-circle" style="margin-left: 59px;height: 72%;width: 187px;">
@@ -1814,15 +1932,103 @@
 
                     </div>
                 </div>
+                <hr>
 
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="background-color:aliceblue">
+                    <h3 style="margin-top: 3%;">Join Our Newsletter</h3>
+                    <p style="color: gray;">Signup to be the first to hear about exclusive deals, special offers and upcoming collections</p>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Enter email for weekly newsletter" style="margin-left: 99%;">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-primary" style="margin-left: 734%;margin-top: -69%;height: 44px;width: 111%;background-color: black; color: white;">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="container-fluid" style="width: 80%;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./img/open-book-education-icon-logo-vector-20092739.jpg" alt="" style="width: 11%;height: 18%;margin-left: -78%;">
+                                <p style="font-size: 74%;margin-right: 42%;margin-top: 6%;"> 91 Binh Thai 1 Street, Hoa Tho Dong Ward, Cam Le District, Da Nang City</p>
+                                <p style="font-size: 74%;margin-right: 61%;margin-top: 5%;">honghanh@book.com</p>
+                                <p style="font-size: 74%;margin-right: 70%;margin-top: -3%;">+84 905 481 946</p>
+                                <div style="margin-top: -6%;float: left;">
+                                    <i class="fab fa-instagram" style="margin: 20px;"></i>
+                                    <i class="fab fa-facebook-f" style="margin: 20px;"></i>
+                                    <i class="fab fa-youtube" style="margin: 20px;"></i>
+                                    <i class="fab fa-twitter" style="margin: 20px;"></i>
 
-                <!--/.Carousel Wrapper-->
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <p style="font-size: 88%;">Explore</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 6%;color: gray;">About us</p>
+                                <p style="font-size: 74%;margin-right: 6%;margin-top: 5%;color: gray;">Sitemap</p>
+                                <p style="font-size: 74%;margin-right: 1%;margin-top: 0%;color: gray;">Bookmark</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Sign in/Join</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p style="font-size: 88%;">Customer Service</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 6%;color: gray;">Help center</p>
+                                <p style="font-size: 74%;margin-right: 6%;margin-top: 5%;color: gray;">Return</p>
+                                <p style="font-size: 74%;margin-right: 1%;margin-top: 0%;color: gray;">Product Recalls</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Accessibility</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Contact Us</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Store Pickup</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p style="font-size: 88%;">Policy</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 6%;color: gray;">Return Policy</p>
+                                <p style="font-size: 74%;margin-right: 6%;margin-top: 5%;color: gray;">Terms Of Use</p>
+                                <p style="font-size: 74%;margin-right: 1%;margin-top: 0%;color: gray;">Security</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Privacy</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p style="font-size: 88%;">Categories</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 6%;color: gray;">Action</p>
+                                <p style="font-size: 74%;margin-right: 6%;margin-top: 5%;color: gray;">Comedy</p>
+                                <p style="font-size: 74%;margin-right: 1%;margin-top: 0%;color: gray;">Drama</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Horror</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Kids</p>
+                                <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Romatic Comedy</p>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Optional JavaScript -->
-                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+
+            function openNav1() {
+                document.getElementById("mySidenav1").style.width = "400px";
+                document.getElementById("main1").style.marginLeft = "400px";
+            }
+
+            function closeNav1() {
+                document.getElementById("mySidenav1").style.width = "0";
+                document.getElementById("main1").style.marginLeft = "0";
+            }
+        </script>
+
+        <!--/.Carousel Wrapper-->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 </body>
 
 </html>

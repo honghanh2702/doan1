@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./index1.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url(./img/love-and-passion-background-backgrounds-love-1-5c9b994a5ecab.png);
+            background-position: fixed;
+            background-size: cover;
+            background-repeat: none;
+            background-attachment: fixed;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: antiquewhite;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        
+        .sidenav1 {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-image: url(./img/1609.jpg_wh860.jpg);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav1 a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav1 a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidenav1 .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        #main1 {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+        
+        .page-link {
+            position: relative;
+            display: block;
+            padding: .5rem .75rem;
+            margin-left: -1px;
+            line-height: 1.25;
+            color: black;
+            background-color: aliceblue;
+            border: 1px solid #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-bottom: -10px;padding: 0;" class="container-fluid">
+        <div style="height: 1%;margin: 0;padding: 0;" class="row container-nav">
+            <div class="col-md-2 nav1 center-text" style="" id="nav1">
+                <i class="far fa-question-circle center-text"></i> Can we help you?
+            </div>
+            <div class="col-md-2 nav1" style="" id="nav1">
+                <i class="fas fa-mobile-alt"></i> +84 905 481 946
+            </div>
+            <div class="col-md-8 float-right ctn-icon">
+                <div class="container-abc">
+                    <div id="mySidenav1" class="sidenav1">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()" style="margin-top: 6%;">&times;</a>
+                        <p style="margin-left: -56%;font-size: 150%;font-family: sans-serif;margin-top:-11%;color: black"><i class="fas fa-user-alt"></i>Account</p>
+                        <hr>
+                        <h3>Sign in</h3>
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="email" style="margin-left: -54%;">Username or Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="width: 87%;margin: auto;">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd" style="margin-left: -69%;">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" style="width: 87%;margin: auto;">
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label" style="margin-left: -57%;">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="color: white;background-color: black;width: 55%;">Sign in</button>
+                        </form>
+                    </div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-heart"></i>
+                    <a class="navbar-brand" style="margin: auto; margin-left: -2px; color: black; font-size: 90%;" onclick="openNav1()" href="#"><i class="fas fa-user-alt"></i></i></a>
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p style="margin-left: 12%;font-size: 109%;font-family: unset;">MENU</p>
+        <hr>
+        <a href="./index1.html" style="font-size: 80%;">Pages</a>
+        <a href="./shop.html" style="font-size: 80%;">Arts & Photography</a>
+        <a href="./shop2.html" style="font-size: 80%;">Biograhpies & Memoris</a>
+        <a href="./shop3.html" style="font-size: 80%;">Children Book</a>
+        <a href="./shop4.html" style="font-size: 80%;">Computer & Technology</a>
+        <a href="./shop5.html" style="font-size: 80%;">Cookbokks , Food & Winer</a>
+        <a href="./shop2.html" style="font-size: 80%;">Education &Teaching</a>
+        <a href="./shop3.html" style="font-size: 80%;">Health, Fitness &Dieting</a>
+        <a href="./shop4.html" style="font-size: 80%;">History</a>
+        <a href="./shop5.html" style="font-size: 80%;">Romance</a>
+        <a href="./shop.html" style="font-size: 80%;">Soprts &Outdoors</a>
+        <a href="./shop2.html" style="font-size: 80%;">Travel</a>
+        <hr>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:white">
+        <a class="navbar-brand" style="margin: auto; margin-left: 28px; color: black;" onclick="openNav()" href="#"><i class="fas fa-bars"></i></a>
+        <a class="navbar-brand" style="margin: auto;margin-left: 75px; " href="#"><img width="70px" height="40px" src="./img/your-logo.png" class="" alt="" style="width: 173px;"></a>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse nav-content" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="./index.html">Home</a>
+
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: black;" href="#">Categories <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="./shop.html">Shop</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="./Page.html">Sign in</a>
+                        <a class="dropdown-item" href="./signup.html">Sign up</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="Blog">Blog</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="./Blog.html">Blog</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="./AboutUs.html">About Us</a>
+                    </div>
+                </li>
+
+            </ul>
+
+            <form class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <i class="glph-icon flaticon-loupe input-group-text py-2d75 bg-white-100 border-white-100"><i class="fas fa-search"></i></i>
+                    </div>
+                    <input class="form-control bg-white-100 min-width-380 py-2d75 height-4 border-white-100" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <button class="btn btn-outline-success my-2 my-sm-0 sr-only" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+    <hr>
+    <div>
+        <p style="margin-left: 12%;">Home > Categories</p>
+    </div>
+    <div class="container-fluid" style="width: 80%;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="margin-top: 24%;">
+                    <img class="card-img-top" src="holder.js/100x180/" alt="">
+                    <div class="card-body">
+                        <a href="./index1.html" style="font-size: 103%;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: black;">Categories</a>
+                        <a href="" data-toggle="collapse" data-target="#demo" style="float: right;color: black;"><i class="far fa-window-minimize"></i></a>
+                        <div id="demo" class="collaps">
+                            <p style="margin-top: 33px;font-size: 81%;">Art & Photography</p>
+                            <p style="font-size: 81%;">Baby</p>
+                            <p style="font-size: 81%;">Biographies & Memoirs</p>
+                            <p style="font-size: 81%;">Biography</p>
+                            <p style="font-size: 81%;">Business & Money</p>
+                            <p style="font-size: 81%;">BWafts</p>
+                            <p style="font-size: 81%;">Children</p>
+                            <p style="font-size: 81%;">Christian Books & Bibles</p>
+                            <p style="font-size: 81%;">Cookbooks</p>
+                            <p style="font-size: 81%;">Food & Drink</p>
+                            <p style="font-size: 81%;">Food & Wine</p>
+                            <p style="font-size: 81%;">Health</p>
+                            <p style="font-size: 81%;">History</p>
+                            <p style="font-size: 81%;">Hobbies & Home</p>
+                            <p style="font-size: 81%;">Humor & Entertainment</p>
+                            <p style="font-size: 81%;">Literature & Fiction</p>
+                            <p style="font-size: 81%;">Love</p>
+                            <p style="font-size: 81%;">Mystery</p>
+                            <p style="font-size: 81%;">Politics & Social Sciences</p>
+                            <p style="font-size: 81%;">Reference</p>
+                            <p style="font-size: 81%;">Religion & Spirituality</p>
+                            <p style="font-size: 81%;">Research & Publishing Guides</p>
+                            <p style="font-size: 81%;"></p>
+                            <p style="font-size: 81%;">Romance</p>
+                            <p style="font-size: 81%;">Sports</p>
+                            <p style="font-size: 81%;">Sports & Outdoors</p>
+                            <p style="font-size: 81%;">Thriller & Suspense</p>
+                            <p style="font-size: 81%;">Uncategorized</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="">
+                        <div class="card-body">
+                            <a href="./index1.html" style="font-size: 103%;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: black;">Author</a>
+                            <a href="" data-toggle="collapse" data-target="#demo" style="float: right;color: black;"><i class="far fa-window-minimize"></i></a>
+                            <div id="demo" class="collaps">
+                                <p style="margin-top: 33px;font-size: 81%;">A G Riddle</p>
+                                <p style="font-size: 81%;">Baby</p>
+                                <p style="font-size: 81%;">Blake Crouch</p>
+                                <p style="font-size: 81%;">Colleen Hoover</p>
+                                <p style="font-size: 81%;">G.K. Parks</p>
+                                <p style="font-size: 81%;">J. D. Robb</p>
+                                <p style="font-size: 81%;">James Patterson</p>
+                                <p style="font-size: 81%;">James Wallace</p>
+                                <p style="font-size: 81%;">John Grisham</p>
+                                <p style="font-size: 81%;">Kendra Elliot</p>
+                                <p style="font-size: 81%;">L T Vargus</p>
+                                <p style="font-size: 81%;">Luanne Rice</p>
+                                <p style="font-size: 81%;">Tara Westover</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="holder.js/100x180/" alt="">
+                            <div class="card-body">
+                                <a href="./index1.html" style="font-size: 103%;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: black;">Format</a>
+                                <a href="" data-toggle="collapse" data-target="#demo" style="float: right;color: black;"><i class="far fa-window-minimize"></i></a>
+                                <div id="demo" class="collaps">
+                                    <p style="margin-top: 33px;font-size: 81%;">Hardcover</p>
+                                    <p style="font-size: 81%;">Kindle</p>
+                                    <p style="font-size: 81%;">Papeback</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="holder.js/100x180/" alt="">
+                            <div class="card-body"><a href="./index1.html" style="font-size: 103%;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: black;">Feture Book</a>
+                                <a href="" data-toggle="collapse" data-target="#demo" style="float: right;color: black;"><i class="far fa-window-minimize"></i></a>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div id="demo" class="collaps">
+                                            <img src="./img/13-120x183 .jpg" alt="" style="width: 36%;margin-top: 8%;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="margin-left: -191%;margin-top: 12%;font-size: 83%;"> Blindside (Michael Bennett Book 12) </p><br>
+                                        <p style="margin-left: -186%;font-size: 87%;margin-top: -28%;">$15.99</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div id="demo" class="collaps">
+                                            <img src="./img/9-120x183.jpg" alt="" style="width: 36%;margin-top: 8%;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="margin-left: -191%;margin-top: 12%;font-size: 83%;"> Until the End of Time: Mind, Matter, and Our Search for Meaning in an Evolving Universe </p><br>
+                                        <p style="margin-left: -186%;font-size: 87%;margin-top: -28%;">$12.99</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div id="demo" class="collaps">
+                                            <img src="./img/img2-6.jpg" alt="" style="width: 36%;margin-top: 8%;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="margin-left: -191%;margin-top: 12%;font-size: 83%;"> Open Book: A Memoir </p><br>
+                                        <p style="margin-left: -186%;font-size: 87%;margin-top: -28%;">$10.35</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div>
+                    <p style="margin-top: 10%;color: gray;">Showing all 20 result</p>
+                </div>
+                <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 100%; margin: auto;height: 330px;">
+                    <div class="card" style="margin-right: -10px;z-index: 1;">
+                        <div class="img"><img src="/img/50-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left; margin-top: -3%;">
+                            <p class="card-title" style="color:red;margin-top: -4%;font-size: 60%;">HANDCOVER,KINDEL,PAPEBACK</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style="">  All You Can Ever Know: A Memoir  </b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Anna Banks</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$29.95-59.95</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/13-120x183 .jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -8%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">KINDLE</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b>  Blindside (Michael Bennett Book 12)  </b></p><br>
+                            <p class="card-title" style="color: gray;margin-top: -15%;font-size: 12px;">James Patterson</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$15.99</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/11-150x200.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -10%;">
+                            <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">PAPERBACK </p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Camino Winds  </b></p> <br>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">John Grisham</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$12.99</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/38-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -18%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">PAPERBACK</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> Dark Matter: A Mind-Blowing Twisted Thriller </b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Blake Crouch</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$13.30</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 100%; margin: auto;height: 330px;">
+                    <div class="card" style="margin-right: -10px;z-index: 1;">
+                        <div class="img"><img src="/img/45-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left; margin-top: -3%;">
+                            <p class="card-title" style="color:red;margin-top: -4%;font-size: 60%;">KINDEL</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style="">  Dead End Girl: A Gripping Serial Killer Thriller  </b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">L T Vargus</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$4.04</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/35-150x200.jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -8%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b>  Educated  </b></p><br>
+                            <p class="card-title" style="color: gray;margin-top: -15%;font-size: 12px;">Tara Westover</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$34.99</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/3-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -10%;">
+                            <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">PAPERBACK </p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Last Day </b></p><br>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Luanne Rice</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.75</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/5-150x200.jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -18%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">PAPERBACK</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b> The Last Sister (Columbia River Book 1)</b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Kendra Elliot</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$14.95</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 100%; margin: auto;height: 330px;">
+                    <div class="card" style="margin-right: -10px;z-index: 1;">
+                        <div class="img"><img src="/img/31-120x183 (1).jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left; margin-top: -3%;">
+                            <p class="card-title" style="color:red;margin-top: -4%;font-size: 60%;">KINDEL</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Angry God (All Saints High Book 3) </b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">L.J.Shen</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.30</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/17-150x200.jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -8%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Dark in Death: An Eve Dallas Novel (In Death ,Book 46) </b></p><br>
+                            <p class="card-title" style="color: gray;margin-top: -15%;font-size: 12px;">J.D.Robb</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$14.20</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/28-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -10%;">
+                            <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">PAPERBACK </p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Ask Again , Yes : A Novel </b></p> <br>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Mary Beth Keane</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$11.51</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/img2-6.jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -18%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">PAPERBACK</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Broken Faith: Inside the Word of Faith…</b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Edward Lee</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$10.29</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 100%; margin: auto;height: 330px;">
+                    <div class="card" style="margin-right: -10px;z-index: 1;">
+                        <div class="img"><img src="/img/img3-1.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left; margin-top: -3%;">
+                            <p class="card-title" style="color:red;margin-top: -4%;font-size: 60%;">KINDEL</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Angry God (All Saints High Book 3) </b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">L.J.Shen</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.30</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/36-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -8%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Dark in Death: An Eve Dallas Novel (In Death ,Book 46) </b></p><br>
+                            <p class="card-title" style="color: gray;margin-top: -15%;font-size: 12px;">J.D.Robb</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$14.20</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/46-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -10%;">
+                            <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">PAPERBACK </p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Ask Again , Yes : A Novel </b></p> <br>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Mary Beth Keane</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$11.51</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/33-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -18%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">PAPERBACK</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Broken Faith: Inside the Word of Faith…</b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Edward Lee</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$10.29</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider owl-carousel" style="margin-left: 51px;margin-right: 58px; width: 100%; margin: auto;height: 330px;">
+                    <div class="card" style="margin-right: -10px;z-index: 1;">
+                        <div class="img"><img src="/img/22-120x183.jpg" alt="" style="width: 44%;padding-top: 13px; height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left; margin-top: -3%;">
+                            <p class="card-title" style="color:red;margin-top: -4%;font-size: 60%;">KINDEL</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b style=""> Angry God (All Saints High Book 3) </b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">L.J.Shen</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$1.30</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black; padding: auto;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/18-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -8%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%; padding-top: 23px;">HARDCOVER</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 87%;"><b> Dark in Death: An Eve Dallas Novel (In Death ,Book 46) </b></p><br>
+                            <p class="card-title" style="color: gray;margin-top: -15%;font-size: 12px;">J.D.Robb</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$14.20</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/32-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;height: 76%;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -10%;">
+                            <p class="card-title" style="color:red;margin-top: 0.5%;font-size: 60%;">PAPERBACK </p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Ask Again , Yes : A Novel </b></p> <br>
+                            <p class="card-title" style="color: gray;margin-top: -6%;font-size: 12px;">Mary Beth Keane</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$11.51</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right: -10px;">
+                        <div class="img"><img src="/img/23-120x183.jpg" alt="" style="width: 44%;padding-top: 13px;margin: auto;display: flex;"></div>
+                        <div class="content" style="text-align: left;margin-top: -18%;">
+                            <p class="card-title" style="color:red;margin-top: 0%;font-size: 60%;padding-top: 23px;">PAPERBACK</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 88%;"><b>Broken Faith: Inside the Word of Faith…</b></p>
+                            <p class="card-title" style="color: gray;margin-top: -6%; font-size: 12px;">Edward Lee</p>
+                            <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -5%; font-size: 110%;"><b>$10.29</b></p>
+                            <div id="addcart" class="addcart" style="">
+                                <a href="">
+                                    <h6 style="color: black;">ADD TO CART</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="woocommerce-pagination" aria-label="Shop Page navigation" style="margin: 0;font-family: initial;font-weight: 400;line-height: 1.5;color: black;text-align: left;background-color: #fff;">
+                    <ul class="pagination pagination__custom justify-content-md-center flex-nowrap flex-md-wrap overflow-auto overflow-md-visble" style="margin-top: 3%;">
+                        <li class="flex-shrink-0 flex-md-shrink-1 page-item"> <a class="prev page-link" href="">Previous</a></li>
+                        <li class="flex-shrink-0 flex-md-shrink-1 page-item active"> <a class="page-link" href="./shop.html">1</a></li>
+                        <li class="flex-shrink-0 flex-md-shrink-1 page-item"> <a class="page-link" href="./shop2.html">2</a></li>
+                        <li class="flex-shrink-0 flex-md-shrink-1 page-item"> <a class="page-link" href="./shop3.html">3</a></li>
+                        <li class="flex-shrink-0 flex-md-shrink-1 page-item"> <a class="page-link" href="./shop4.html">4</a></li>
+                        <li class="flex-shrink-0 flex-md-shrink-1 page-item"> <a class="page-link" href="./shop5.html">5</a></li>
+                        <li class="flex-shrink-0 flex-md-shrink-1 page-item"> <a class="next page-link" href="">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12" style="background-color: aliceblue;">
+            <h3 style="margin-top: 3%;margin-left: 44%;">Join Our Newsletter</h3>
+            <p style="color: gray; margin-left: 34%;">Signup to be the first to hear about exclusive deals, special offers and upcoming collections</p>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for=""></label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Enter email for weekly newsletter" style="margin-left: 99%;">
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" style="margin-left: 734%;margin-top: -69%;height: 44px;width: 111%;background-color: black; color: white;">Subscribe</button>
+                </div>
+            </div>
+            <div class="container-fluid" style="width: 80%;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./img/open-book-education-icon-logo-vector-20092739.jpg" alt="" style="width: 11%;height: 18%;margin-left: -78%;">
+                        <p style="font-size: 74%;margin-right: 42%;margin-top: 6%;"> 91 Binh Thai 1 Street, Hoa Tho Dong Ward, Cam Le District, Da Nang City</p>
+                        <p style="font-size: 74%;margin-right: 61%;margin-top: 5%;">honghanh@book.com</p>
+                        <p style="font-size: 74%;margin-right: 70%;margin-top: -3%;">+84 905 481 946</p>
+                        <div style="margin-top: -6%;float: left;">
+                            <i class="fab fa-instagram" style="margin: 20px;"></i>
+                            <i class="fab fa-facebook-f" style="margin: 20px;"></i>
+                            <i class="fab fa-youtube" style="margin: 20px;"></i>
+                            <i class="fab fa-twitter" style="margin: 20px;"></i>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <p style="font-size: 88%;">Explore</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 6%;color: gray;">About us</p>
+                        <p style="font-size: 74%;margin-right: 6%;margin-top: 5%;color: gray;">Sitemap</p>
+                        <p style="font-size: 74%;margin-right: 1%;margin-top: 0%;color: gray;">Bookmark</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Sign in/Join</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p style="font-size: 88%;">Customer Service</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 6%;color: gray;">Help center</p>
+                        <p style="font-size: 74%;margin-right: 6%;margin-top: 5%;color: gray;">Return</p>
+                        <p style="font-size: 74%;margin-right: 1%;margin-top: 0%;color: gray;">Product Recalls</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Accessibility</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Contact Us</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Store Pickup</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p style="font-size: 88%;">Policy</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 6%;color: gray;">Return Policy</p>
+                        <p style="font-size: 74%;margin-right: 6%;margin-top: 5%;color: gray;">Terms Of Use</p>
+                        <p style="font-size: 74%;margin-right: 1%;margin-top: 0%;color: gray;">Security</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Privacy</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p style="font-size: 88%;">Categories</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 6%;color: gray;">Action</p>
+                        <p style="font-size: 74%;margin-right: 6%;margin-top: 5%;color: gray;">Comedy</p>
+                        <p style="font-size: 74%;margin-right: 1%;margin-top: 0%;color: gray;">Drama</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Horror</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Kids</p>
+                        <p style="font-size: 74%;margin-right: 2%;margin-top: 0%;color: gray;">Romatic Comedy</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function openNav1() {
+            document.getElementById("mySidenav1").style.width = "400px";
+            document.getElementById("main1").style.marginLeft = "400px";
+        }
+
+        function closeNav1() {
+            document.getElementById("mySidenav1").style.width = "0";
+            document.getElementById("main1").style.marginLeft = "0";
+        }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
