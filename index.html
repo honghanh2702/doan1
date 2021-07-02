@@ -63,15 +63,6 @@
             margin-left: 50px;
         }
         
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-            .sidenav a {
-                font-size: 18px;
-            }
-        }
-        
         .sidenav1 {
             height: 100%;
             width: 0;
@@ -110,13 +101,36 @@
             transition: margin-left .5s;
             padding: 16px;
         }
+        
+        @media only screen and (max-height: 480px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            #top {
+                display: none;
+            }
+            #category h3 {
+                margin-left: 0px;
+                float: left;
+                text-align: left;
+            }
+            .active-a1 {
+                padding-left: 70px;
+            }
+        }
     </style>
 
 </head>
 
 
 <body>
-    <div style="margin-bottom: -10px;padding: 0;" class="container-fluid">
+    <div id="top" style="margin-bottom: -10px;padding: 0;" class="container-fluid">
         <div style="height: 1%;margin: 0;padding: 0;" class="row container-nav">
             <div class="col-md-2 nav1 center-text" style="" id="nav1">
                 <i class="far fa-question-circle center-text"></i> Can we help you?
@@ -284,7 +298,7 @@
             <!--/.Controls-->
         </div>
         <div class="container-fluid">
-            <div class="row " style="padding-top: 100px;">
+            <div id="category" class="row " style="padding-top: 100px;">
                 <div class="col-md-4 ">
                     <h3 style="font-size: 35px; margin-left: 50px; font-family:unset;">Featured Categories</h3>
                 </div>
@@ -299,72 +313,81 @@
     </div>
     <div class="active-a1">
         <ul class="list-unstyled my-0 row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-wd-5">
-            <li class="nav-li col mb-5" style="background-color:rgb(249, 240, 255)">
-                <div class="container-ah1 bg-indigo-light px-6 py-4" style="margin-top: 20px;margin-left: 20px;">
-                    <div class="container-ah2 font-size-12" style="font-size: 20px; color:blueviolet;">
-                        <i class="fas fa-photo-video" style="font-size: 40px;"></i>
-                    </div>
-                    <div class="product-category__body" style="">
-                        <h3 class="ab1" style="font-size:20px; margin-top: 15px;">
-                            <a href="./shop.html" class="text-dark">Arts &amp; Photography</a>
-                        </h3>
-                        <a href="./shop.html" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
-                    </div>
-                </div>
+            <div style="margin: 0;padding: 0;margin: auto;" class="row">
+                <div class="col-md-1-2">
 
-            </li>
-            <li class="nav-li1 col mb-5" style="background-color:rgb(255, 249, 240)">
-                <div class="container-ah2 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
-                    <div class="product-category__icon font-size-12" style="font-size: 20px;">
-                        <i class="fas fa-utensils" style="font-size: 40px; color:chocolate"></i>
-                    </div>
-                    <div class="product-category__body">
-                        <h3 class="ab2" style="font-size:20px; margin-top: 15px;">
-                            <a href="./shop.html" class="bwgb-products-category__category-title stretched-link text-dark">Food &amp; Drink</a>
-                        </h3>
-                        <a href="./shop.html" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
-                    </div>
                 </div>
-            </li>
-            <li class="nav-li2 col mb-5" style="background-color:rgb(255, 240, 244)">
-                <div class="container-ah3 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
-                    <div class="product-category__icon font-size-12  text-tangerine">
-                        <i class="far fa-heart" style="font-size: 40px;color: fuchsia"></i>
+                <li class="nav-li col-md-2" style="background-color:rgb(249, 240, 255)">
+                    <div class="container-ah1 bg-indigo-light px-6 py-4" style="margin-top: 20px;margin-left: 20px;">
+                        <div class="container-ah2 font-size-12" style="font-size: 20px; color:blueviolet;">
+                            <i class="fas fa-photo-video" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="product-category__body" style="">
+                            <h3 class="ab1" style="font-size:20px; margin-top: 15px;">
+                                <a href="./shop.html" class="text-dark">Arts &amp; Photography</a>
+                            </h3>
+                            <a href="./shop.html" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        </div>
                     </div>
-                    <div class=" product-category__body ">
-                        <h3 class="ab3" style="font-size:20px; margin-top: 15px;">
-                            <a href="./shop.html " class="bwgb-products-category__category-title stretched-link text-dark ">Romance</a>
-                        </h3>
-                        <a href="./shop.html " class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+
+                </li>
+                <li class="nav-li1 col-md-2" style="background-color:rgb(255, 249, 240)">
+                    <div class="container-ah2 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
+                        <div class="product-category__icon font-size-12" style="font-size: 20px;">
+                            <i class="fas fa-utensils" style="font-size: 40px; color:chocolate"></i>
+                        </div>
+                        <div class="product-category__body">
+                            <h3 class="ab2" style="font-size:20px; margin-top: 15px;">
+                                <a href="./shop.html" class="bwgb-products-category__category-title stretched-link text-dark">Food &amp; Drink</a>
+                            </h3>
+                            <a href="./shop.html" class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        </div>
                     </div>
+                </li>
+                <li class="nav-li2 col-md-2" style="background-color:rgb(255, 240, 244)">
+                    <div class="container-ah3 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
+                        <div class="product-category__icon font-size-12  text-tangerine">
+                            <i class="far fa-heart" style="font-size: 40px;color: fuchsia"></i>
+                        </div>
+                        <div class=" product-category__body ">
+                            <h3 class="ab3" style="font-size:20px; margin-top: 15px;">
+                                <a href="./shop.html " class="bwgb-products-category__category-title stretched-link text-dark ">Romance</a>
+                            </h3>
+                            <a href="./shop.html " class="stretched-link bwgb-products-category__shop-now-text text-dark" style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-li3 col-md-2 " style="background-color:rgb(240, 244, 255) ">
+                    <div class="container-ah4 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
+                        <div class="product-category__icon font-size-12 text-tangerine ">
+                            <i class="fas fa-stethoscope" style="font-size: 40px;color: rgb(0, 162, 255);"></i>
+                        </div>
+                        <div class=" product-category__body ">
+                            <h3 class="ab4 " style="font-size:20px; margin-top: 15px; ">
+                                <a href="./shop.html" class="bwgb-products-category__category-title stretched-link text-dark ">Health</a>
+                            </h3>
+                            <a href="./shop.html " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-li4 col-md-2 " style="background-color:rgb(255, 240, 244) ; ">
+                    <div class="container-ah5 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
+                        <div class="product-category__icon font-size-12 text-tangerine ">
+                            <i class="far fa-edit" style="font-size: 40px;color: crimson"></i>
+                        </div>
+                        <div class="product-category__body ">
+                            <h3 class="ab5" style="font-size:20px; margin-top: 15px; ">
+                                <a href="./shop.html" class="bwgb-products-category__category-title stretched-link text-dark ">Biography</a>
+                            </h3>
+                            <a href="./shop.html " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
+                        </div>
+                    </div>
+                </li>
+                <div class="col-md-1-2">
+
                 </div>
-            </li>
-            <li class="nav-li3 col mb-5 " style="background-color:rgb(240, 244, 255) ">
-                <div class="container-ah4 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
-                    <div class="product-category__icon font-size-12 text-tangerine ">
-                        <i class="fas fa-stethoscope" style="font-size: 40px;color: rgb(0, 162, 255);"></i>
-                    </div>
-                    <div class=" product-category__body ">
-                        <h3 class="ab4 " style="font-size:20px; margin-top: 15px; ">
-                            <a href="./shop.html" class="bwgb-products-category__category-title stretched-link text-dark ">Health</a>
-                        </h3>
-                        <a href="./shop.html " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-li4 col mb-5 " style="background-color:rgb(255, 240, 244) ; ">
-                <div class="container-ah5 bg-tangerine-light px-6 py-5" style="margin-left: 20px;">
-                    <div class="product-category__icon font-size-12 text-tangerine ">
-                        <i class="far fa-edit" style="font-size: 40px;color: crimson"></i>
-                    </div>
-                    <div class="product-category__body ">
-                        <h3 class="ab5" style="font-size:20px; margin-top: 15px; ">
-                            <a href="./shop.html" class="bwgb-products-category__category-title stretched-link text-dark ">Biography</a>
-                        </h3>
-                        <a href="./shop.html " class="stretched-link bwgb-products-category__shop-now-text text-dark " style="margin-right: 108px;font-size: 110%;">Shop Now</a>
-                    </div>
-                </div>
-            </li>
+            </div>
+
 
         </ul>
     </div>
@@ -941,7 +964,6 @@
             </div>
         </div>
         <br>
-
         <div class="container-fluid" style="padding-top: 59px;">
             <div class="row " style="padding-top: 50px; background-color: rgb(255, 192, 239);">
                 <div class="col-md-4 ">

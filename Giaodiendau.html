@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Book</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="http://fonts.cdnfonts.com/css/funny-cute" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Make the image fully responsive */
+        
+        body {
+            background-color: #fff;
+            background-position: fixed;
+            background-size: cover;
+            background-repeat: none;
+            background-attachment: fixed;
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f1f1f1;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: deeppink;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: red;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        
+        .sidenav1 {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-image: url(./img/1609.jpg_wh860.jpg);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav1 a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav1 a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidenav1 .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        #main1 {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+        
+        @import url(https://fonts.googleapis.com/css?family=Khula:700);
+        body {
+            background: #fff;
+        }
+        
+        .hidden {
+            opacity: 0;
+        }
+        
+        .console-container {
+            font-family: 'Greghor II', sans-serif;
+            font-size: 4em;
+            margin-top: -2%;
+            text-align: center;
+            height: 200px;
+            width: 600px;
+            display: block;
+            position: absolute;
+            color: white;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .console-underscore {
+            display: inline-block;
+            position: relative;
+            top: -0.14em;
+            left: 10px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div style="margin-bottom: -10px;padding: 0;" class="container-fluid">
+        <div style="height: 1%;margin: 0;padding: 0;" class="row container-nav">
+            <div class="col-md-2 nav1 center-text" style="" id="nav1">
+                <i class="far fa-question-circle center-text"></i> Can we help you?
+            </div>
+            <div class="col-md-2 nav1" style="" id="nav1">
+                <i class="fas fa-mobile-alt"></i> +84 905 481 946
+            </div>
+            <div class="col-md-8 float-right ctn-icon">
+                <div class="container-abc">
+                    <div id="mySidenav1" class="sidenav1">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()" style="margin-top: 6%;">&times;</a>
+                        <p style="margin-left: -56%;font-size: 150%;font-family: sans-serif;margin-top:-11%;color: black"><i class="fas fa-user-alt"></i>Account</p>
+                        <hr>
+                        <h3>Sign in</h3>
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="email" style="margin-left: -54%;">Username or Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="width: 87%;margin: auto;">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd" style="margin-left: -69%;">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" style="width: 87%;margin: auto;">
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label" style="margin-left: -57%;">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="color: white;background-color: black;width: 55%;">Sign in</button>
+                        </form>
+                    </div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-heart"></i>
+                    <a class="navbar-brand" style="margin: auto; margin-left: -2px; color: black; font-size: 90%;" onclick="openNav1()" href="#"><i class="fas fa-user-alt"></i></i></a>
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p style="margin-left: 12%;font-size: 109%;font-family: unset;">MENU</p>
+        <hr>
+        <a href="./index1.html" style="font-size: 80%;">Pages</a>
+        <a href="./shop.html" style="font-size: 80%;">Arts & Photography</a>
+        <a href="./shop2.html" style="font-size: 80%;">Biograhpies & Memoris</a>
+        <a href="./shop3.html" style="font-size: 80%;">Children Book</a>
+        <a href="./shop4.html" style="font-size: 80%;">Computer & Technology</a>
+        <a href="./shop5.html" style="font-size: 80%;">Cookbokks , Food & Winer</a>
+        <a href="./shop2.html" style="font-size: 80%;">Education &Teaching</a>
+        <a href="./shop3.html" style="font-size: 80%;">Health, Fitness &Dieting</a>
+        <a href="./shop4.html" style="font-size: 80%;">History</a>
+        <a href="./shop5.html" style="font-size: 80%;">Romance</a>
+        <a href="./shop.html" style="font-size: 80%;">Soprts &Outdoors</a>
+        <a href="./shop2.html" style="font-size: 80%;">Travel</a>
+        <hr>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:white">
+        <a class="navbar-brand" style="margin: auto; margin-left: 28px; color: black;" onclick="openNav()" href="#"><i class="fas fa-bars"></i></a>
+        <a class="navbar-brand" style="margin: auto;margin-left: 75px; " href="#"><img width="70px" height="40px" src="./img/your-logo.png" class="" alt="" style="width: 173px;"></a>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse nav-content" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="./index.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: black;" href="./index1.html">Categories <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="./shop.html">Shop</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="./Page.html">Sign in</a>
+                        <a class="dropdown-item" href="./signup.html">Sign up</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="Blog">Blog</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="./Blog.html">Blog</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="./AboutUs.html">About Us</a>
+                    </div>
+                </li>
+
+            </ul>
+
+            <form class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <i class="glph-icon flaticon-loupe input-group-text py-2d75 bg-white-100 border-white-100"><i class="fas fa-search"></i></i>
+                    </div>
+                    <input class="form-control bg-white-100 min-width-380 py-2d75 height-4 border-white-100" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <button class="btn btn-outline-success my-2 my-sm-0 sr-only" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+    <!--Carousel Wrapper-->
+    <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div style="background-image: linear-gradient(145deg, rgb(223, 97, 240), rgb(104, 151, 240), rgb(92, 206, 172));">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="progress-bar-animated">
+                        <div class='console-container' style="margin-top: 3%;"><span id='text'></span>
+                            <div class='console-underscore' id='console'>&#95;</div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="carousel-inner" role="listbox">
+                        <!-- First slide -->
+                        <div class="carousel-item active" style="">
+                            <!--Mask color-->
+                            <div class="view">
+                                <!--Video source-->
+                                <video class="video-fluid" style="width: 100%;" autoplay loop muted>
+                        <source src="https://video-previews.elements.envatousercontent.com/h264-video-previews/7b9775fa-f3a1-4970-8bb7-d5507b7fef71/19793939.mp4" type="video/mp4" />
+                      </video>
+                                <div class="mask rgba-indigo-light"></div>
+                            </div>
+                        </div>
+                        <!-- /.First slide -->
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+
+            function openNav1() {
+                document.getElementById("mySidenav1").style.width = "400px";
+                document.getElementById("main1").style.marginLeft = "400px";
+            }
+
+            function closeNav1() {
+                document.getElementById("mySidenav1").style.width = "0";
+                document.getElementById("main1").style.marginLeft = "0";
+            }
+        </script>
+
+        <!--/.Carousel Wrapper-->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+</body>
+
+</html>
